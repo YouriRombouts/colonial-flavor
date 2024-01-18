@@ -1,0 +1,8 @@
+﻿l_english:
+ # Decisions
+ abolish_slavery_early_act_title:0 "Pass Abolition of Slavery Act"
+ abolish_slavery_early_act_desc:0 "Pass an act to prohibit slavery and outlaw slave trade throughout the nation."
+ 
+ # Country modifiers
+ the_abolish_slavery_early_act:0 "The Abolition of Slavery Act"
+ desc_the_abolish_slavery_early_act:0 "Slave trade and slavery is henceforth prohibited throughout our nation."

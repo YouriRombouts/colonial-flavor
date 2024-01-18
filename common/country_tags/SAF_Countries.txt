@@ -1,0 +1,2 @@
+ZAR = "countries/CapeRepublic.txt"
+SAF = "countries/SouthAfricanRepublic.txt"

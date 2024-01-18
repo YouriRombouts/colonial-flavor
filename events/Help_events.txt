@@ -1,0 +1,25 @@
+namespace = Help
+country_event = {
+	id = Help.1
+	title = Help.1.t
+	desc = Help.1.d
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = the_abolish_slavery_early_act
+		current_age = age_of_revolutions
+	}
+	
+	option = {
+		name = Help.1.a
+		remove_country_modifier = "the_abolish_slavery_early_act"
+		
+		add_country_modifier = {
+			name = "the_abolish_slavery_act"
+			duration = -1
+		}
+	}
+}
