@@ -1,10 +1,10 @@
 estate_settlers = {
 	icon = 16
-	
+
 	# Used for when declaring independence
 	independence_government = republic
-	starting_reform = peasant_republic
-	independence_tech_group = western_group
+	starting_reform = peasants_republic
+	independence_tech_group = western
 
 	province_independence_weight = {
 		factor = 1
@@ -30,8 +30,8 @@ estate_settlers = {
 	}
 
 	# If true, country will get estate
-	
-	trigger = {	
+
+	trigger = {
 		is_nomad = no
 		NOT = { has_estate = estate_cossacks }
 		has_idea  = general_colonization_law # (allows foreign settlers according to description)
@@ -47,14 +47,14 @@ estate_settlers = {
 				}
 			}
 		}
-		
+
 		# Logical requirements for receiving immigration
 		num_of_ports = 1 # New world nation has sea access
 		any_known_country = { # Old world nation
-			has_institution = new_world_i # Nation knows of colonialism	
-			knows_country = PREV # Old world nation knows new world nation exists			
-			technology_group = PREV # Old world nation has same technology group			
-		} 
+			has_institution = new_world_i # Nation knows of colonialism
+			knows_country = PREV # Old world nation knows new world nation exists
+			technology_group = PREV # Old world nation has same technology group
+		}
 	}
 
 	# These scale with loyalty & power
@@ -63,7 +63,7 @@ estate_settlers = {
 	}
 	country_modifier_neutral = {
 		culture_conversion_cost = -0.10
-	}	
+	}
 	country_modifier_angry = {
 		culture_conversion_cost = 0.25
 		global_unrest = 2
@@ -83,7 +83,7 @@ estate_settlers = {
 						OR = {
 							has_terrain = steppe
 							has_terrain = savannah
-						}				
+						}
 						NOT = { development = 15 }
 					}
 					amount = 5
@@ -105,7 +105,7 @@ estate_settlers = {
 	}
 
 	influence_from_dev_modifier = 2.0
-	
+
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
@@ -114,7 +114,7 @@ estate_settlers = {
 		}
 		loyalty = -20
 	}
-	
+
 	loyalty_modifier = {
 		desc = settlers_in_republic
 		trigger = {
@@ -122,33 +122,33 @@ estate_settlers = {
 		}
 		loyalty = 10
 	}
-	
+
 	loyalty_modifier = {
 		desc = settlers_in_parliament
 		trigger = {
 			has_parliament = yes
 		}
 		loyalty = 10
-	}	
-	
+	}
+
 	#Custom Names
 	custom_name = {
 		desc = estate_trekboers
 		trigger = {
 			OR = {
-				culture_group = dutch
-				culture_group = boer
-			}			
+				primary_culture = dutch
+				primary_culture = boer
+			}
 			capital_scope = { region = south_africa_region }
 		}
 	}
-	
+
 	color = { 200 150 150 }
 
 	privileges = {
 		estate_settlers_land_rights
 		estate_settlers_plains_settlement
-		estate_settlers_expand_borders	
+		estate_settlers_expand_borders
 		estate_settlers_prospecting
 	}
 

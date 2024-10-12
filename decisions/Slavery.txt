@@ -2,33 +2,33 @@ country_decisions = {
 	abolish_slavery_early_act = {
 		potential = {
 			NOT = { has_country_modifier = the_abolish_slavery_early_act }
-			NOT = { current_age = age_of_revolutions }				
-			slaves = 1			
+			NOT = { current_age = age_of_revolutions }
+			slaves = 1
 			adm_tech = 15
-			OR = {				
-				capital_scope = { 
-					continent = africa 					
-				}						
+			OR = {
+				capital_scope = {
+					continent = africa
+				}
 				full_idea_group = humanist_ideas
 			}
 		}
-		
+
 		allow = {
 			dip = 3
 			NOT = { overextension_percentage = 0.02 }
-			
+
 			OR = {
 				technology_group = east_african
 				technology_group = sub_saharan
 				technology_group = central_african
-				
+
 				has_global_modifier_value = {
 					which = native_assimilation
-					value = 1.5
+					value =  1.5
 				}
-			}			
+			}
 		}
-		
+
 		effect = {
 			add_prestige = 5
 			add_country_modifier = {
@@ -57,5 +57,5 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 		}
-	}	
+	}
 }
